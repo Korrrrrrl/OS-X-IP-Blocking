@@ -2,7 +2,7 @@
 
 # log_fix_blocked_ip.pl - To fix an issue where entries are not being written to /var/log/blocked_ip.log
 # after a reboot. I have not found a real fix yet and don't know why this happens after a reboot.
-# Version 0.1.0
+# Version 0.1.2
 # Copyright (c) 2015 - Karl Kernaghan
 # Email - kkernaghan7@gmail.com
 

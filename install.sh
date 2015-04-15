@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installer script for OS X blocked IP logging
-# Version 0.1.0
+# Version 0.1.1
 # Copyright (c) 2015 Karl Kernaghan
 # Email - kkernaghan7@gmail.com
 #
@@ -12,7 +12,7 @@
 # blocked_ip.sh is placed in /etc
 # This script is called by /Library/LaunchDaemons/com.blocked_ip_list.plist
 # every 5 minuets. This script gathers information from adaptive firewall
-# and ipfw (for now. This will be removed.) and places it in /var/log/blocked_ip.log
+# and places it in /var/log/blocked_ip.log
 #
 # log_fix_blocked_ip.pl is added to /Users/<user>/bin
 # If ~/bin does not exist it will be created.
