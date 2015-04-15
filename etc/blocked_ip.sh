@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # blocked_ip.sh
-# Version 0.3.2
-# Copyright (c) 2013 - 2015 Karl Kernaghan
+# Version 0.1.2
+# Copyright (c) 2015 Karl Kernaghan
 # Email - kkernaghan7@gmail.com
 
 # This script creates a log based on the output of /etc/sshd-fwscan.sh and the output of
@@ -18,4 +18,3 @@ ipfw list | grep deny >> /var/log/blocked_ip.log
 
 echo "$(date) - Blocked by Adaptive Firewall:" >> /var/log/blocked_ip.log
 less /var/db/af/blacklist >> /var/log/blocked_ip.log
-
