@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # blocked_ip.sh
-# Version 0.1.6
+# Version 0.1.9
 # Copyright (c) 2015 Karl Kernaghan
 # Email - kkernaghan7@gmail.com
 
@@ -15,4 +15,4 @@ echo "****************************" >> /var/log/blocked_ip.log
 
 echo "$(date) - Blocked by Adaptive Firewall:" >> /var/log/blocked_ip.log
 echo "Address         Expiration date Rule#" >> /var/log/blocked_ip.log
-less /var/db/af/blacklist | grep 14296 >> /var/log/blocked_ip.log
+less /var/db/af/blacklist | grep "^[^#]" >> /var/log/blocked_ip.log
